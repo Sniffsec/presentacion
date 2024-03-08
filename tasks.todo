@@ -1,0 +1,27 @@
+Diseño principal
+    ✔ Hacer un diseño en Figma @done(24-03-07 22:31)
+
+Pensar que Lenguajes, frameworks y la db que voy a usar
+    ✔ Pensado @done(24-03-08 19:47)
+        (HTML, CSS, Js, Vue.js, mongodb)
+
+Preparar los íconos he imágenes
+    ☐ Íconos
+    ☐ Imágenes
+
+Maquetacion vue.js
+    ☐ Hecho
+
+Responsividad
+    ☐ Hecho
+
+Crear funciones de botones (Js)
+    ☐ Hecho
+
+Decoración
+    ☐ Animaciones (floating-ui vue)
+    ☐ Sombras
+    ☐ Blur (opcional)
+
+Hacer que obtenga las imagenes pidiendole la direccion a mongo
+    ☐ Hecho
