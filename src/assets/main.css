@@ -8,9 +8,33 @@ body {
   background-color: rgb(10, 0, 32);
 }
 
+.flex {
+  display: flex;
+}
+
+.max {
+  max-width: 60rem;
+}
+
+.texto {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.subtitulo {
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgb(0, 92, 230), 60%, rgb(0, 199, 116));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 /* Inicio */
 .titulo {
-  display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(45deg, rgb(0, 92, 230), 60%, rgb(0, 199, 116));
@@ -21,7 +45,6 @@ body {
 }
 
 .titulo2 {
-  display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(45deg, rgb(0, 92, 230), 60%, rgb(0, 199, 116));
@@ -30,7 +53,7 @@ body {
   font-weight: bold;
   font-size: 3rem;
   margin-top: 9rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 #inicio {
@@ -68,10 +91,21 @@ body {
   height: 100vh;
 }
 
-.bio {
-  color: white;
-  margin-bottom: 1rem;
+/* Titulaciones */
+#titulaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
+
+.estudios {
+  margin: 0 2rem;
+}
+
+/* Conocimientos */
+
 
 /* Scrollbar */
 ::-webkit-scrollbar {
