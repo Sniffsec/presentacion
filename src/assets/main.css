@@ -20,6 +20,19 @@ body {
   font-size: 4rem;
 }
 
+.titulo2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgb(0, 92, 230), 60%, rgb(0, 199, 116));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 9rem;
+  margin-bottom: 3rem;
+}
+
 #inicio {
   display: flex;
   flex-direction: column;
@@ -48,7 +61,29 @@ body {
 
 /* Sobre mí */
 #sobreMi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: rgb(3, 0, 83);
+}
+
+.bio {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #191724; /* color del track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #515268; /* color del thumb */
+  border-radius: 20px;
+  border: 3px solid #272435; /* crea un padding alrededor del thumb */
 }
