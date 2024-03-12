@@ -23,6 +23,12 @@
     <!-- Redes y bases de datos -->
     <redes id="redes" />
 
+    <!-- Pentesting -->
+    <pentesting id="pentesting" />
+
+    <!-- Contacto -->
+    <contacto id="contacto" />
+    
   </div>
 </template>
 
@@ -33,6 +39,8 @@ import sobreMi from "./components/sobreMi.vue"
 import titulaciones from "./components/titulaciones.vue"
 import webDev from "./components/webDeb.vue"
 import redes from "./components/redes.vue"
+import pentesting from "./components/pentesting.vue"
+import contacto from "./components/contacto.vue"
 </script>
 
 <style lang="scss">

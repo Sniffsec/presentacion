@@ -94,3 +94,115 @@
   font-weight: bold;
   margin: 0.5rem;
 }
+
+/* A partir de pentesting haciendo bien */
+
+
+/* Screen */
+.all-screen {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Containers */
+.bordered-and-grey {
+  border-radius: 0.5rem;
+  background-color: rgba(175, 175, 255, 0.1);
+}
+
+.bordered-and-purple-gradient {
+  border-radius: 0.5rem;
+  background: linear-gradient(45deg, rgb(0, 92, 230), 60%, rgb(119, 0, 199));
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap {
+  flex: 1 0 40%;
+}
+
+.standard-padding {
+  padding: 2rem 3rem;
+}
+
+.min-padding {
+  padding: 0.3rem 0.5rem;
+}
+
+.standard-margin {
+  margin: 2rem;
+}
+
+.min-column-margin {
+  margin: 1rem;
+}
+
+.left-right-margin {
+  margin: 0 8rem;
+}
+
+/* Text */
+.standard-text {
+  color: white;
+  margin-top: 1rem;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.text-without-margin {
+  color: white;
+  text-align: justify;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.big {
+  font-size: 3rem;
+}
+
+.medium {
+  font-size: 2rem;
+}
+
+.blue-green-color-text {
+  background: linear-gradient(45deg, rgb(0, 92, 230), 60%, rgb(0, 199, 116));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.padding-at-top {
+  padding-top: 4rem;
+}
+
+.many-padding-at-top {
+  padding-top: 9rem;
+}
+
+
+/* Images */
+.standard-border {
+  border-radius: 0.5rem;
+}
+
+/* Dimensions */
+.medium-max {
+  max-width: 80rem;
+}
+
+.small-max {
+  max-width: 20rem;
+}

@@ -6,8 +6,8 @@
             <h4 @click="titulaciones">Titulaciones<div class="subMark"></div></h4>
             <h4 @click="webDev">Web dev<div class="subMark"></div></h4>
             <h4 @click="redes">Redes y DB<div class="subMark"></div></h4>
-            <h4>Pentesting<div class="subMark"></div></h4>
-            <h4>Contacto<div class="subMark"></div></h4>
+            <h4 @click="pentesting">Pentesting<div class="subMark"></div></h4>
+            <h4 @click="contacto">Contacto<div class="subMark"></div></h4>
         </div>
         <div id="background">
 
@@ -93,6 +93,14 @@ export default {
         redes() {
             var redes = document.getElementById('redes')
             redes.scrollIntoView({ behavior: 'smooth' })
+        },
+        pentesting() {
+            var pentesting = document.getElementById('pentesting')
+            pentesting.scrollIntoView({ behavior: 'smooth' })
+        },
+        contacto() {
+            var contacto = document.getElementById('contacto')
+            contacto.scrollIntoView({ behavior: 'smooth' })
         }
     }
 }
