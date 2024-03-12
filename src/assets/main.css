@@ -32,8 +32,10 @@
   -webkit-text-fill-color: transparent;
   font-weight: bold;
   font-size: 2rem;
-  margin-top: 2rem;
+  margin-top: 3rem;
   margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 .texto {
@@ -55,13 +57,10 @@
   width: 2.5rem;
   height: auto;
   margin: 0.5rem;
-
 }
 
 .stars2 {
   width: 2rem;
-
-
 }
 
 .Container, .container2 {
@@ -69,7 +68,7 @@
   flex-direction: column;
   justify-content: center;
   border-radius: 0.5rem;
-  padding: 1rem 2rem;
+  padding: 2rem 3rem;
   background-color: rgba(175, 175, 255, 0.1);
   margin: 0.5rem;
   text-align: justify;
@@ -78,4 +77,20 @@
 
 .container2 {
   flex-direction: row;
+}
+
+.logos {
+  width: 4rem;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.tecnologias {
+  display: flex;
+  flex: 1 0 40%;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin: 0.5rem;
 }

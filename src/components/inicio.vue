@@ -1,12 +1,9 @@
-<script>
-</script>
-
 <template>
-    <div id="inicio">
+    <section id="inicio">
       <h1 id="titulo"><img class="stars" src="../assets/media/estrella.svg" alt="">Informático</h1>
       <img src="../assets/media/foto.png" alt="Foto de perfil" id="fotoPerfil">
-      <button id="descargarCv">Descargar CV</button>
-    </div>
+      <button @click="descargarCv" id="descargarCv">Descargar CV</button>
+    </section>
 </template>
 
 <style>
@@ -49,3 +46,7 @@
   border-style: none;
 }
 </style>
+
+<script>
+
+</script>

@@ -1,3 +1,7 @@
+<script>
+
+</script>
+
 <template>
   <div class="app">
 
@@ -5,16 +9,19 @@
     <navVar />
 
     <!-- Inicio -->
-    <inicio />
+    <inicio id="inicio" />
 
     <!-- Sobre mí -->
-    <sobreMi />
+    <sobreMi id="sobreMi" />
 
     <!-- Titulaciones -->
-    <titulaciones />
+    <titulaciones id="titulaciones" />
 
-    <!-- Conocimientos -->
-    <conocimientos />
+    <!-- Web development -->
+    <webDev id="webDev" />
+
+    <!-- Redes y bases de datos -->
+    <redes id="redes" />
 
   </div>
 </template>
@@ -24,7 +31,8 @@ import navVar from "./components/nav-var.vue"
 import inicio from "./components/inicio.vue"
 import sobreMi from "./components/sobreMi.vue"
 import titulaciones from "./components/titulaciones.vue"
-import conocimientos from "./components/conocimientos.vue"
+import webDev from "./components/webDeb.vue"
+import redes from "./components/redes.vue"
 </script>
 
 <style lang="scss">
@@ -36,7 +44,7 @@ import conocimientos from "./components/conocimientos.vue"
 }
 
 body {
-  background-color: rgb(10, 0, 32);
+  background-color: rgb(0, 0, 24);
 }
 
 /* Scrollbar */

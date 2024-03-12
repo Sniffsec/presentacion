@@ -1,14 +1,12 @@
-<script>
-
-</script>
-
 <template>
     <div id="nav-var">
         <div id="container">
-            <h4>inicio<div class="subMark"></div></h4>
-            <h4>Sobre mí<div class="subMark"></div></h4>
-            <h4>Titulaciones<div class="subMark"></div></h4>
-            <h4>Conocimientos<div class="subMark"></div></h4>
+            <h4 @click="inicio">inicio<div class="subMark"></div></h4>
+            <h4 @click="sobreMi">Sobre mí<div class="subMark"></div></h4>
+            <h4 @click="titulaciones">Titulaciones<div class="subMark"></div></h4>
+            <h4 @click="webDev">Web dev<div class="subMark"></div></h4>
+            <h4 @click="redes">Redes y DB<div class="subMark"></div></h4>
+            <h4>Pentesting<div class="subMark"></div></h4>
             <h4>Contacto<div class="subMark"></div></h4>
         </div>
         <div id="background">
@@ -23,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     width: 100%;
     height: 5rem;
@@ -33,7 +32,7 @@
 #background {
     position: absolute;
     background-color: rgba(185, 185, 255, 0.08);
-    width: 40rem;
+    width: 50rem;
     height: 3rem;
     border-radius: 1rem;
     margin-top: 0.8rem;
@@ -46,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 40rem;
+    width: 50rem;
     height: 3rem;
     background-color: rgba(175, 175, 255, 0.2);
     border-radius: 1rem;
@@ -71,3 +70,30 @@ h4 {
     z-index: 2;
 }
 </style>
+
+<script>
+export default {
+    methods: {
+        inicio() {
+            var inicio = document.getElementById('inicio')
+                inicio.scrollIntoView({ behavior: 'smooth' })
+        },
+        sobreMi() {
+            var sobreMi = document.getElementById('sobreMi')
+                sobreMi.scrollIntoView({ behavior: 'smooth' })
+        },
+        titulaciones() {
+            var titulaciones = document.getElementById('titulaciones')
+            titulaciones.scrollIntoView({ behavior: 'smooth' })
+        },
+        webDev() {
+            var webDev = document.getElementById('webDev')
+            webDev.scrollIntoView({ behavior: 'smooth' })
+        },
+        redes() {
+            var redes = document.getElementById('redes')
+            redes.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
+}
+</script>

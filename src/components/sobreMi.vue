@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div id="sobreMi">
+    <section id="sobreMi">
       <h1 class="titulo2"><img class="stars2" src="../assets/media/estrella.svg" alt="">Sobre mí</h1>
       <div id="content">
         <div class="Container">
@@ -19,7 +19,7 @@
           <p class="textBotton">Veículo: Moto (A1)</p>
         </div>
       </div>
-    </div>
+    </section>
 </template>
 
 <style>
