@@ -1,9 +1,11 @@
 <script>
+import stars from "../assets/media/estrella.svg"
 import copy from "../assets/media/copy.svg"
 
 export default {
     data() {
         return {
+            stars: stars,
             title: "Contacto",
             mail: "sniffsec@proton.me",
             github: "Sniffsec",
@@ -17,8 +19,8 @@ export default {
 
 <template>
     <section class="all-screen centered column">
-        <h2 class="blue-green-color-text centered big">{{ title }}</h2>
-        <div class="bordered-and-grey standard-padding small-max">
+        <h2 class="blue-green-color-text centered big"><img class="stars2" :src="stars" alt="">{{ title }}</h2>
+        <div class="bordered-and-grey standard-padding small-max margin-top">
             
             <div class="flex-alighned">
                 <h3 class="text-without-margin bordered-and-purple-gradient min-padding centered min-column-margin">Mail</h3>

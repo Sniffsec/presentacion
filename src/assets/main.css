@@ -171,6 +171,10 @@
   margin: 0 1rem;
 }
 
+.margin-top {
+  margin-top: 2rem;
+}
+
 /* Text */
 .standard-text {
   color: white;
@@ -227,6 +231,10 @@
 /* Dimensions */
 .medium-max {
   max-width: 80rem;
+}
+
+.standard-max {
+  max-width: 50rem;
 }
 
 .small-max {

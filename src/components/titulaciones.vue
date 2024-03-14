@@ -1,55 +1,93 @@
 <script>
+import stars from "../assets/media/estrella.svg"
+
+export default {
+    data() {
+        return {
+            stars: stars,
+            title: "Titulaciones",
+            qualification1: {
+                name: "Educacion Secundaria",
+                center: "(Centro Uribe-Kosta BHI)",
+                date: "2018-2021"
+            },
+            qualification2: {
+                name: "Técnico en Preimpresión Digital",
+                center: "(Centro Emilio Campuzano)",
+                date: "2021-2023"
+            },
+            qualification3: {
+                name: "Técnico en ASIR",
+                center: "(Centro Almi)",
+                date: "2023-Actualidad"
+            },
+            subtitle: "Idiomas",
+            lenguage1: {
+                name: "Inglés",
+                qualification: "B1",
+                text: "(Sin título pero en proceso de obtencion del B2)"
+            },
+            lenguage2: {
+                name: "Euskara",
+                qualification: "B2",
+                text: "(Titulación de HABE)"
+            }
+        }
+    }
+}
 
 </script>
 
 <template>
-    <section id="titulaciones">
-        <h1 class="titulo2"><img class="stars2" src="../assets/media/estrella.svg" alt="">Titulaciones</h1>
-        <div class="container2">
-            <div class="estudios texto">
-                <p class="texto">Educacion Secundaria</p>
-                <p class="texto">Técnico en Preimpresión Digital</p>
-                <p class="textBotton">Técnico en ASIR</p>
+    <section class="all-screen centered column">
+        <h2 class="blue-green-color-text centered big"><img class="stars2" :src="stars" alt="">{{ title }}</h2>
+        <article class="bordered-and-grey standard-padding standard-max margin-top centered">
+            <div id="margin-right-for-qualifications">
+                <div class="text-without-margin">{{ qualification1.name }}</div>
+                <div class="standard-text">{{ qualification2.name }}</div>
+                <div class="standard-text">{{ qualification3.name }}</div>
             </div>
-            <div class="estudios texto">
-                <p class="texto">(Centro Uribe-Kosta BHI)</p>
-                <p class="texto">(Centro Emilio Campuzano)</p>
-                <p class="textBotton">(Centro Almi)</p>
+            <div id="margin-both-for-qualifications">
+                <div class="text-without-margin">{{ qualification1.center }}</div>
+                <div class="standard-text">{{ qualification2.center }}</div>
+                <div class="standard-text">{{ qualification3.center }}</div>
             </div>
-            <div class="estudios texto">
-                <p class="texto">2018-2021</p>
-                <p class="texto">2021-2023</p>
-                <p class="textBotton">2023-Actualidad</p>
+            <div id="margin-left-for-qualifications">
+                <div class="text-without-margin">{{ qualification1.date }}</div>
+                <div class="standard-text">{{ qualification2.date }}</div>
+                <div class="standard-text">{{ qualification3.date }}</div>
             </div>
-        </div>
-        <h1 class="subtitulo">Idiomas</h1>
-        <div class="container2">
-            <div class="estudios texto">
-                <p class="texto">Ingles</p>
-                <p class="textBotton">euskara</p>
+        </article>
+        <h2 class="blue-green-color-text medium margin-top">{{ subtitle }}</h2>
+        <article class="bordered-and-grey standard-padding standard-max margin-top centered">
+            <div id="margin-right-for-qualifications">
+                <div class="text-without-margin">{{ lenguage1.name }}</div>
+                <div class="standard-text">{{ lenguage2.name }}</div>
             </div>
-            <div class="estudios texto">
-                <p class="texto">B1</p>
-                <p class="textBotton">B2</p>
+            <div id="margin-both-for-qualifications">
+                <div class="text-without-margin">{{ lenguage1.qualification }}</div>
+                <div class="standard-text">{{ lenguage2.qualification }}</div>
             </div>
-            <div class="estudios texto">
-                <p class="texto">(Sin título pero en proceso de obtencion del B2)</p>
-                <p class="textBotton">(Titulación de HABE)</p>
+            <div id="margin-both-for-qualifications">
+                <div class="text-without-margin">{{ lenguage1.text }}</div>
+                <div class="standard-text">{{ lenguage2.text }}</div>
             </div>
-        </div>
+        </article>
     </section>
 </template>
 
 <style>
-#titulaciones {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
+
+#margin-right-for-qualifications {
+    margin-right: 2rem;
 }
 
-.estudios {
+#margin-both-for-qualifications {
     margin: 0 2rem;
 }
+
+#margin-left-for-qualifications {
+    margin-left: 2rem;
+}
+
 </style>
